@@ -34,7 +34,7 @@ To obtain a summarized overview of your seeded runs, run the `seed_averaging.py`
 ## Cite as
 
 ```
-@article{bock2023wear,
+@article{bock2024annotation,
   title = {Weak-Annotation of HAR Datasets using Vision Foundation Models},
   author = {Bock, Marius and Van Laerhoven, Kristof and Moeller, Michael},
   publisher = {Association for Computing Machinery},
