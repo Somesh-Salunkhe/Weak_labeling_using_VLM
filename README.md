@@ -32,4 +32,16 @@ To obtain a summarized overview of your seeded runs, run the `seed_averaging.py`
 - Name each folder following the name structure `seed_X` where `X` is the employed seed of each experiment.
 
 ## Cite as
-Coming soon
+
+```
+@article{bock2023wear,
+  title = {Weak-Annotation of HAR Datasets using Vision Foundation Models},
+  author = {Bock, Marius and Van Laerhoven, Kristof and Moeller, Michael},
+  publisher = {Association for Computing Machinery},
+  booktitle = {Proceedings of the 2024 ACM International Symposium on Wearable Computers},
+  pages = {55–62},
+  year={2024},
+  url = {https://doi.org/10.1145/3675095.3676613},
+}
+```
+
