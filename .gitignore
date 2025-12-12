@@ -1,5 +1,6 @@
 data
 logs
+output
 output_preds
 
 # Byte-compiled / optimized / DLL files
