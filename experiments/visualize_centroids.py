@@ -6,8 +6,8 @@ import os
 import sys
 
 # --- CONFIGURATION ---
-# Path to your generated centroids file (adjust the filename if needed)
-# Example: Using Subject 0 as you mentioned
+# Path to your generated centroids file 
+
 CENTROID_FILE = os.path.join('output', 'clusters', 'sbj_0_centroids.npy')
 OUTPUT_IMAGE = os.path.join('output', 'visualizations', 'sbj_0_centroids_plot.png')
 
@@ -17,7 +17,7 @@ os.makedirs(os.path.dirname(OUTPUT_IMAGE), exist_ok=True)
 def main():
     # 1. Load the Data
     if not os.path.exists(CENTROID_FILE):
-        print(f"❌ File not found: {CENTROID_FILE}")
+        print(f"File not found: {CENTROID_FILE}")
         print("Please check the path or run the clustering step first.")
         sys.exit(1)
         
@@ -32,7 +32,7 @@ def main():
     centroids_pca = pca.fit_transform(centroids)
     
     # Method B: t-SNE (Good for local grouping structure)
-    # Perplexity must be < n_samples. For 100 points, 30 is standard, but we can try lower for clarity.
+    
     tsne = TSNE(n_components=2, perplexity=15, random_state=42, init='pca', learning_rate='auto')
     centroids_tsne = tsne.fit_transform(centroids)
 
@@ -67,7 +67,7 @@ def main():
 
     plt.tight_layout()
     plt.savefig(OUTPUT_IMAGE)
-    print(f"✅ Visualization saved to: {OUTPUT_IMAGE}")
+    print(f"Visualization saved to: {OUTPUT_IMAGE}")
     print("Open this image to see how your 100 clusters are distributed.")
 
 if __name__ == "__main__":
